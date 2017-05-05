@@ -30,7 +30,7 @@
             <p>{{p.Name}}</p>
             <p id="albumName">{{p.Pseudo}}</p>
           </div>
-        </transition-group>
+        </transition>
       </div>
     </div>
 
@@ -98,6 +98,8 @@
       </div>
         </div>
     <PlaylistHelperModal v-if="playlistHelperModalActive == true && playlists.length == 0 && pseudoModalActive == false"></PlaylistHelperModal>
+    <EventModal v-if="eventModalActive == true"></EventModal>
+    <MoodsModal v-if="moodsModalActive == true"><MoodsModal>
   </div>
   </div>
 </template> 
@@ -106,6 +108,7 @@
 import { mapGetters, mapActions } from 'vuex'
 import PlaylistHelperModal from '../components/playlistHelperModal.vue'
 import EventModal from '../components/events.vue'
+import MoodsModal from '../components/moods.vue'
 import PlaylistApiService from '../services/PlaylistApiService'
 import SpotifyApiService from '../services/SpotifyApiService'
 import DeezerApiService from '../services/DeezerApiService'
@@ -208,6 +211,7 @@ export default {
   components: {
     PlaylistHelperModal,
     EventModal,
+    MoodsModal,
     ScaleLoader
   }
 }
@@ -215,12 +219,6 @@ export default {
 
 <style>
 /*Set the element size and position*/
-
-@font-face {
-    font-family: 'beat';
-    src:url('../assets/beat.otf');
-}
-
 .playlistGlobal {
   height: 76vh;
 }

@@ -6,21 +6,21 @@
           <router-link to="/playlist"><img src="./assets/triangleGrey.png" id="appLogo"></router-link><span class="appTitle"><span id="appRedText">o</span>mega</span>
         </div>
         <div class="col-4 appProviders">
-          <span @click="relogin('Facebook')"/>FACEBOOK</span>
+          <span @click="relogin('Facebook')">FACEBOOK</span>
           <span @click="relogin('Deezer')" id="appRedText">DEEZER</span>
           <span @click="relogin('Spotify')">SPOTIFY</span>
         </div>
         <div class="col-4 appProfile">
-          <img src="./assets/profile.png" id="appProfile"><span class="appProfileText">{{pseudo}}</span>          
-          <pseudoModal v-if="pseudoModalActive == true && loadPseudoEnd == true && pseudo == null"></pseudoModal>  
+          <img src="./assets/profile.png" id="appProfile"><span class="appProfileText">{{pseudo}}</span></span>              
+          <pseudoModal v-if="pseudoModalActive == true && loadPseudoEnd == true && pseudo == null"><pseudoModal>  
         </div>
       </div>
       <div class="col-12 appControlPanel">
         <div><router-link to="/playlist"><span @click="showPlaylistHelperModal(true)"><img src="./assets/playlistsIcon.png"><br>playlists</span></router-link></div>
-        <div><router-link to ="/events"><span><img src="./assets/eventIcon.png"><br>évènements</span></router-link></div>
-        <div><router-link to ="/groups"><span><img src="./assets/groupIcon.png"><br>groupes</span></router-link></div>
-        <div><router-link to="/moods"><span><img src="./assets/moodIcon.png" v-if="currentMood !== ''"><img src="./assets/moodOff.png" v-if="currentMood == ''"><br>ambiances</span></router-link></div>
-        <div><router-link to="/mix"><span @click="startMix()"><img src="./assets/MixLogo.png" id="mixImage" v-if="currentMood == ''"><img src="./assets/triangleGrey.png" v-if="currentMood !== ''"><br>mix</span></router-link></div>
+        <div><router-link to ="/events"><span><img src="./assets/eventIcon.png"><br>évènements</router-link></span></div>
+        <div><router-link to ="/groups"><span><img src="./assets/groupIcon.png"><br>groupes</router-link></span></div>
+        <div><router-link to="/moods"><span><img src="./assets/moodIcon.png" v-if="currentMood !== ''"><img src="./assets/moodOff.png" v-if="currentMood == ''"><br>ambiances</router-link></span></div>
+        <div><router-link to="/mix"><span @click="startMix()"><img src="./assets/MixLogo.png" id="mixImage" v-if="currentMood == ''"><img src="./assets/triangleGrey.png" v-if="currentMood !== ''"><br>mix</router-link></span></div>
       </div>
     </div>
     <router-view></router-view>
@@ -46,6 +46,7 @@
   data () {
     return {
       endpoint: null,
+      active: 'playlistsTab',
       isActive: true,
       true: true,
       loadPseudoEnd: false,
