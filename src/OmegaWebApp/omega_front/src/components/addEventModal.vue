@@ -10,9 +10,9 @@
               <span id="eventTitle">créer un évènement omega</span><br>
               <br>
               <div class="newEventInfos">
-                <span id="smallText">Nom : <input type="text" v-model="eventName"><br><span>
+                <span id="smallText">Nom : <input type="text" v-model="eventName"><br></span>
                 <span id="smallText">Image :<input v-bind:ref="avatar" type="file" name="avatar" id="inputFile" @change="upload"></span><br>
-                <span id="smallText">Lieu : <input type="text" v-model="eventLocation"><br><span>
+                <span id="smallText">Lieu : <input type="text" v-model="eventLocation"><br></span>
                 <span id="smallText">Date :<input type="date" v-model="eventStartTime" min="2017-01-31"></span>
               </div>
               <!--<div class="newEvent">

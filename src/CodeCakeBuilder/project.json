@@ -5,12 +5,12 @@
   },
 
   "dependencies": {
-    "Code.Cake": "0.14.0",
     "OpenCover": "4.6.519",
-    "NUnit.Console": "3.5.0",
-    "NUnit.ConsoleRunner": "3.5.0",
-    "Cake.Common": "0.17.0",
-    "Microsoft.Extensions.PlatformAbstractions": "1.1.0"
+    "Microsoft.Extensions.PlatformAbstractions": "1.1.0",
+    "Cake.Common": "0.19.5",
+    "Code.Cake": "0.15.0",
+    "NUnit.Console": "3.6.1",
+    "NUnit.ConsoleRunner": "3.6.1"
   },
 
   "commands": {

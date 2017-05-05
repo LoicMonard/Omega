@@ -7,7 +7,7 @@
             <div class="addPseudoModal">
               <span id="pseudoTitle">CHOISISSEZ UN PSEUDO</span><br>              
               <br>
-              <span id="smallText">Pseudo : <input type="text" style="color: white;" v-model="pseudo"><br><span>
+              <span id="smallText">Pseudo : <input type="text" style="color: white;" v-model="pseudo"><br></span>
               <br><br>
               <span id="pseudotext" class="redText">Attention, vous ne pourrez plus le modifier</span><br>              
             </div>

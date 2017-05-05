@@ -10,7 +10,7 @@
               <span id="groupTitle">CRÉER UN GROUPE OMEGA</span><br>
               <br>
               <div class="newGroupInfos">
-                <span id="smallText">Nom : <input type="text" v-model="groupName"><br><span>
+                <span id="smallText">Nom : <input type="text" v-model="groupName"><br></span>
                 <span id="smallText">Image : <input v-bind:ref="avatar" type="file" name="avatar" id="inputFile" @change="upload"></span>
               </div>
               <!--<div class="newGroup">

@@ -26,7 +26,7 @@
           </div>
         </div>
       </div>
-      <mixModal v-if="mixModalActive == true"><mixModal>
+      <mixModal v-if="mixModalActive == true"></mixModal>
     </div>
     <div class="saveMix" @click="showMixModal(true)" v-if="finalMix.length != 0">
       <span>SAUVEGARDER LE MIX</span>

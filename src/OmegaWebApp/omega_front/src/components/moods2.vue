@@ -53,7 +53,7 @@
     <div class="addMood">
       <img src="../assets/plus.png" id="plusMood" @click="showMoodsModal(true)">
     </div>
-    <moodModal v-if="moodsModalActive == true"><moodmodal>
+    <moodModal v-if="moodsModalActive == true"></moodmodal>
   </div>
 </template>
 
