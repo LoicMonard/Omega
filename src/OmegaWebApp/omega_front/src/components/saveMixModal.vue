@@ -7,7 +7,7 @@
             <div class="addMixModal">
               <span id="mixTitle">NOUVEAU MIX</span><br>
               <br>
-              <span id="smallText">Nom : <input type="text" style="color: white;" v-model="name"><br><span>
+              <span id="smallText">Nom : <input type="text" style="color: white;" v-model="name"><br></span>
             </div>
           </div>
           <div class="modalClose" @click="saveMix({name, playlist}), showMixModal(false)">

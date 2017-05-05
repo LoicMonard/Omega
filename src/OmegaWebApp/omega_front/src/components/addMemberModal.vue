@@ -7,7 +7,7 @@
             <div class="addMemberModal">
               <span id="memberTitle">AJOUTER UN MEMBRE</span><br>
               <br>
-              <span id="smallText">Pseudo : <input type="text" style="color: white;" v-model="pseudo"><br><span>
+              <span id="smallText">Pseudo : <input type="text" style="color: white;" v-model="pseudo"><br></span>
               <br><br>
              <!-- <span id="membertext" class="redText">Attention, vous ne pourrez plus le modifier</span><br>      -->        
             </div>

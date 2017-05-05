@@ -8,7 +8,7 @@
             <div class="addMoodModal">
               <span id="moodTitle">NOUVELLE AMBIANCE</span><br>
               <br>
-              <span id="smallText">Nom : <input type="text" v-model="moodName"><br><span>
+              <span id="smallText">Nom : <input type="text" v-model="moodName"><br></span>
               <span id="smallText">Image : <input type="text" v-model="moodCover"></span>
               <!--<input type="file" name="image">-->
               <br><br>

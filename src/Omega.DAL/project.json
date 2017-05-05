@@ -3,13 +3,13 @@
 
   "dependencies": {
     "Facebook-NetCore": "1.0.0",
-    "Microsoft.AspNetCore.Hosting.Abstractions": "1.1.0",
-    "Microsoft.Extensions.Configuration": "1.1.0",
-    "Microsoft.Extensions.Configuration.EnvironmentVariables": "1.1.0",
-    "Microsoft.Extensions.Configuration.FileExtensions": "1.1.0",
-    "Microsoft.Extensions.Configuration.Json": "1.1.0",
+    "Microsoft.AspNetCore.Hosting.Abstractions": "1.1.1",
+    "Microsoft.Extensions.Configuration": "1.1.1",
+    "Microsoft.Extensions.Configuration.EnvironmentVariables": "1.1.1",
+    "Microsoft.Extensions.Configuration.FileExtensions": "1.1.1",
+    "Microsoft.Extensions.Configuration.Json": "1.1.1",
     "NETStandard.Library": "1.6.1",
-    "WindowsAzure.Storage": "7.2.1"
+    "WindowsAzure.Storage": "8.1.1"
   },
 
   "frameworks": {
